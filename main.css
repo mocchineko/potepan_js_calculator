@@ -1,0 +1,78 @@
+p {
+    font-size: 35px;
+}
+
+span {
+    font-size: 35px;
+    padding: 2px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #f7e44e;
+    height:
+}
+
+.calculator-button {
+    display: inline-block;
+    position: relative;
+}
+
+.content-width {
+    max-width: 350px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outline-corner {
+    border-radius: 17px;
+}
+
+#calculator {
+    background-color: #a51bc7;
+}
+
+.display {
+    padding: 12px;
+    background-color: #f7e44e;
+}
+
+.display-result {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* ここから追加した */
+
+ul.buttons {
+    display: block;
+    width: 100%;
+    font-size: 0;
+}
+
+ul.buttons li {
+    width: 25%;
+    display: inline-block;
+    padding: 2px;
+}
+
+ul.buttons li div {
+    justify-content: center;
+}

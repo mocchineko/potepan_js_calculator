@@ -1,0 +1,60 @@
+/* margin padding reset */
+
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* remove list point mark */
+
+ul, ol {
+    list-style: none;
+}
+
+/* remove border & off descender */
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* remove descender */
+
+svg, input, select, textarea, label {
+    vertical-align: middle;
+}
+
+/* set collapse */
+
+table {
+    border-collapse: collapse;
+}
+
+/* break word for all elements */
+
+*, *:before, *:after {
+    word-break: break-all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+address {
+    font-style: normal;
+}
+
+p {
+    line-height: 1.5;
+}
