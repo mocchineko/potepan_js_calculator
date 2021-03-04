@@ -13,6 +13,26 @@ ul {
     justify-content: space-between;
 }
 
+ul.buttons {
+    display: block;
+    width: 100%;
+    font-size: 0;
+}
+
+ul.buttons li {
+    width: 25%;
+    display: inline-block;
+    padding: 2px;
+}
+
+ul.buttons li div {
+    justify-content: center;
+}
+
+ul.buttons li.half-width-li {
+    width: 50%;
+}
+
 li {
     padding-left: 2px;
     padding-right: 2px;
@@ -25,7 +45,7 @@ li {
 .button {
     display: flex;
     align-items: center;
-    background-color: #f7e44e;
+    background-color: #f8e765;
     height:
 }
 
@@ -46,33 +66,15 @@ li {
 }
 
 #calculator {
-    background-color: #a51bc7;
+    background-color: #a22cc0;
 }
 
 .display {
     padding: 12px;
-    background-color: #f7e44e;
+    background-color: #f8e765;
 }
 
 .display-result {
     text-align: right;
     font-weight: bold;
-}
-
-/* ここから追加した */
-
-ul.buttons {
-    display: block;
-    width: 100%;
-    font-size: 0;
-}
-
-ul.buttons li {
-    width: 25%;
-    display: inline-block;
-    padding: 2px;
-}
-
-ul.buttons li div {
-    justify-content: center;
 }
