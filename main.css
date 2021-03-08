@@ -35,6 +35,18 @@ input {
 /* ディスプレイ */
 
 .display {
+    width: 100%;
+    height: 78px;
+    padding: 12px;
+    border: 0;
+    text-align: right;
+    font-size: 40px;
+    font-family: "Hiragino Kaku Gothic Pro";
+    background-color: #f8e765;
+    color: #000;
+}
+
+/* .display {
     padding: 12px;
     background-color: #f8e765;
 }
@@ -49,7 +61,7 @@ input#result {
     font-family: "Hiragino Kaku Gothic Pro";
     background-color: #f8e765;
     color: #000;
-}
+} */
 
 /* ボタン */
 
@@ -57,6 +69,10 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 ul.buttons {
@@ -79,21 +95,17 @@ ul.buttons li div {
     justify-content: center;
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
-.button {
+.button, .enzan, .acEqual-button {
     align-items: center;
     background-color: #f8e765;
 }
 
-.calculator-button {
+/* .calculator-button {
     display: inline-block;
     position: relative;
-}
+} */
 
-input.button {
+input.button, .enzan, .acEqual-button {
     width: 100%;
     height: 100%;
     padding: 4px;
@@ -105,5 +117,13 @@ input.button {
 }
 
 input.button:hover {
-    opacity: .7;
+    background-color: #fff8c7;
+}
+
+input.enzan:hover {
+    background-color: #fff8c7;
+}
+
+input.acEqual-button:hover {
+    background-color: #fff8c7;
 }
