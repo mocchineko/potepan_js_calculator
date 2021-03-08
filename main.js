@@ -38,13 +38,11 @@ $(function () {
 $(function () {
     $(".button").click(function () {
         let num = $(this).val();
-        console.log(num);
         //入力可能桁数は10桁までとする
         if ($("#result").text().length >= 10) {
             $("#result").text("error!");
             $(".button").prop("disabled", true);
         } else {
-            $("#result").text(Number($("#result").text() + $(this).val()));
             //clearFlag = trueなら表示中の数字をクリアにする
             if (clearFlag === true) {
                 $("#result").text("");
@@ -53,6 +51,7 @@ $(function () {
                 //小数点をまた押せる様にする
                 $("#dot").prop("disabled", false);
             }
+            $("#result").text(Number($("#result").text() + num));
         }
     });
 });
@@ -135,8 +134,9 @@ $(function () {
     $("#equal").click(function () {
         enzanClick1()
         digit()
-
+        result = 0;
         clearFlag = false;
+        enzan = "";
     });
 });
 
